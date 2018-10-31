@@ -1,0 +1,199 @@
+html{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: '. . . cent . .';
+}
+
+body{
+  margin: 0;
+  width: 400px;
+  height: 100vh;
+  grid-area: cent;
+}
+
+h1, h2 {
+  font-family: Lato;
+}
+
+#app{
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.card{
+    height: 100vh;
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+     background: rgba(35, 110, 5, 0.733);
+     background-image: url('./image/teemu-paananen-283670-unsplash.jpg');
+     background-repeat: no-repeat;
+     border-radius: 2%;
+
+}
+
+/*logo*/
+#logo{
+  order: 1;
+  width: inherit;
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 30px;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  
+}
+
+#logo-box{
+  width: 100px;
+  height: 50px;
+  background: greenyellow;
+  border-radius: 20px;
+  border: 0;
+  position: relative;
+}
+
+#logo-box::before{
+   content: '';
+        height: 20px;
+        width: 20px;
+        background: white;
+        border-radius: 100%;
+        color: white;
+        position: absolute;
+        animation: bubble 40s linear;
+        animation-iteration-count: infinite;
+
+}
+#logo-box::after{
+  content: '';
+        height: 20px;
+        width: 20px;
+        background: white;
+        border-radius: 100%;
+        color: white;
+        position: absolute;
+        animation: bubble 25s linear;
+        
+        animation-iteration-count: infinite;
+        top: 5%;
+        	transform: scale(0.6);
+}
+/*animation*/
+@keyframes bubble{
+      0% {
+        top: 100px;
+      }
+      
+      50%{
+        background: greenyellow;
+      }
+
+      100%{
+       top: -100%;
+       background: greenyellow;
+        
+      }
+}
+/*slogan*/
+.slogan_font-small{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.life_stand-out{
+  color: white;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 3rem;
+}
+
+.green{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: extra-expanded;
+}
+
+.first-line{
+  width: 30%;
+   margin-top: 0;
+   
+}
+.second-line{
+  width: 10%;
+  margin-right: 180px;
+   margin-left: 160px;
+}
+/*main content*/
+main{
+  order: 2;
+  width: inherit;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+#login{
+  background: whitesmoke;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 4px;
+}
+
+#name-box{
+  width: inherit;
+  margin-bottom: 5px;
+}
+
+#number-box{
+  margin-bottom: 5px;
+}
+
+.type{
+  width: 100%;
+  border: 0;
+  height: 48px;
+}
+
+#login-btn{
+  width: inherit;
+}
+button{
+  width: 100%;
+  height: 48px;
+  background: greenyellow;
+  border-radius: 4px;
+}
+
+/*footer*/
+footer{
+  order: 3;
+  text-align: center;
+  
+
+}
+
+#ft-text{
+  width: 100%;
+  
+  margin-left: 40px;
+  margin-right: 110px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: lighter;
+  font-size: medium;
+
+}
+
+a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder !important;
+  color: white;
+  letter-spacing: 1px;
+}
+
+
